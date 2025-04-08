@@ -12,13 +12,14 @@ public class Dictionary {
         String line = "";
 
         System.out.println("Hello operator, please enter any sentence in the English language:");
-        String input = scan.nextLine();
+        String input = scan.nextLine().toLowerCase();
+        //System.out.println(input);
 
         String[] sentence = input.split(" ");
 
         try {
             inputStream = new BufferedReader(new FileReader(
-                    "C:\\Users\\wasay\\OneDrive\\Documents\\Dev\\ICS3U1 Sem 2\\ASS8\\Dictionary\\src\\Dictionary.txt"));
+                    "Dictionary.txt")); //file path for lab computer
             while ((line = inputStream.readLine()) != null) {
                 dictionary.add(line);
             }
