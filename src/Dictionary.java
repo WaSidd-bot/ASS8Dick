@@ -13,8 +13,7 @@ public class Dictionary {
 
         System.out.println("Hello operator, please enter any sentence in the English language:");
         String input = scan.nextLine().toLowerCase();
-        //System.out.println(input);
-
+        
         String[] sentence = input.split(" ");
 
         try {
@@ -51,29 +50,3 @@ public class Dictionary {
         }
     }
 }
-
-/*
- * 
- * try {
- * inputStream: use buffered reader and other readers possibly
- * ("dictionary.txt")
- * 
- * HashSet <String> dictionary = new HashSet <String>();
- * 
- * while ((line = inputStream.readLine()) != null) {
- * dictionary.add(line)
- * 
- * }
- * 
- * for (int i = 0; sentence.length; i++) {
- * dictionary.contains(sentence[i])
- * 
- * if (true) {
- * print("valid word");
- * } else {
- * print("learn how to spell mofo");
- * }
- * }
- * 
- * }
- */
